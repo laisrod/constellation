@@ -1,10 +1,2 @@
 <?php include_once("index.html"); ?>
-<?php include_once("vendor/css/bundle.min.css"); ?>
-<?php include_once("vendor/css/jquery.fancybox.min.css"); ?>
-<?php include_once("vendor/css/owl.carousel.min.css"); ?>
-<?php include_once("vendor/css/swiper.min.css"); ?>
-<?php include_once("vendor/css/cubeportfolio.min.css"); ?>
-<?php include_once("vendor/css/wow.css"); ?>
-<?php include_once("vendor/css/LineIcons.min.css"); ?>
-<?php include_once("css/settings.css"); ?>
-<?php include_once("css/style.css"); ?>
+
