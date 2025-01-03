@@ -63,11 +63,12 @@ a {
 /*Headings*/
 
 .heading {
-  font-size: 48px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 25px;
+  font-size: 1px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 18px;
   font-family: "Montserrat", sans-serif;
+  padding-top: 6px;
 }
 
 .subheading {
@@ -75,10 +76,7 @@ a {
   color: #fff;
   font-weight: 500;
   margin-bottom: 25px;
-}
-
-#benefits {
-  color: black;
+  text-align: center;
 }
 
 .text {
@@ -86,6 +84,7 @@ a {
   font-weight: 400;
   color: #fff;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 /*Social Icons*/
@@ -144,7 +143,7 @@ a {
   position: absolute;
   line-height: inherit;
   display: inline-block;
-  color: #000;
+  color: #333333;
   border: 2px solid transparent;
   text-transform: capitalize;
   transition: all 0.5s ease !important;
@@ -153,7 +152,7 @@ a {
 .btn.button {
   font-size: 12px !important;
   font-weight: 600;
-  color: #000;
+  color: #333333;
   padding: 9px 27px !important;
   line-height: 1.8em !important;
   cursor: pointer;
@@ -170,13 +169,13 @@ a {
 .btn.pink-btn {
   background: #ff7b88;
   border-color: #ff7b88;
-  color: #fff;
+  color: #333333;
 }
 
 .btn.white-btn {
   background: #fff;
   border-color: #fff;
-  color: #000;
+  color: #333333;
 }
 
 /*Button hover*/
@@ -255,6 +254,10 @@ a {
 ====================================== */
 
 /* nav top default */
+.navbarSupportedContent {
+  font-size: 500px;
+}
+
 .navbar.navbar-top-default {
   position: absolute;
   top: 0;
@@ -627,6 +630,7 @@ a {
 }
 .side-menu-footer .social-icons ul li a {
   color: #fff;
+  text-align: center;
 }
 
 /* ===================================
@@ -640,7 +644,7 @@ a {
     #e6dee9 100%
   ); // parede de marmore
   height: auto;
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 8px;
   position: relative;
 }
@@ -654,10 +658,10 @@ a {
 }
 .banner .text-col {
   position: absolute;
-  bottom: 9.5rem;
+  bottom: 9.3rem;
 }
 .banner .text-col .heading {
-  font-size: 72px;
+  font-size: 40px;
   padding-right: 5rem;
 }
 .banner .text-col .text {
@@ -702,6 +706,56 @@ a {
   padding: 10px 12px 10px 5px;
   background-color: transparent;
 }
+
+.text-one {
+  font-size: 18px;
+  color: #333333;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
+#benefits03 {
+  color: #bdc2e8;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+#benefits {
+  font-size: 28px;
+  color: #333333;
+  width: 100%;
+  display: block;
+  margin-bottom: 5;
+  width: 100%;
+  weight: 500;
+  margin-top: 26px;
+  padding-top: 25px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#benefits01 {
+  color: #333333;
+  padding-right: 50px;
+}
+
+#benefits02 {
+  color: #333333;
+  padding-left: 50px;
+}
+
+#benefits-text {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  color: #aba4ff;
+}
+
 /* ===================================
      about section
 ====================================== */
@@ -716,13 +770,16 @@ a {
 }
 /*Row-1*/
 .about-section .row-1 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.about-section .heading-col .subheading {
-  color: #ff7b88;
+.about-section .heading-col .subheading .benefits-title {
+  color: #333333; !important;
+  
 }
-.about-section .heading-col .heading {
-  color: #000;
+.about-section .heading-col .heading .benefits-text {
+  color: #333333; !important;
+  font-size: 26px;
 }
 /*Row-2*/
 .about-section .row-2 .img-col {
@@ -732,22 +789,28 @@ a {
 /*Row-3*/
 .about-section .row-3 {
   position: relative;
-  margin-top: 40px;
 }
 .about-section .yoga-services .service .heading {
-  color: #000;
+  color: #333333; !important;
 }
-.about-section .yoga-services .service .subheading {
+.about-section .yoga-services .service .subheading-row-3 {
   color: #aba4ff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 .about-section .yoga-services .service .text {
   color: #212121;
-  font-size: 15px;
+  font-size: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 /*Row-4*/
 .about-section .row-4 .service {
-  margin-top: 20rem;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  color: #333333;
 }
 
 /*Hover*/
@@ -764,7 +827,7 @@ a {
     Reviews Section
 ====================================== */
 .reviews-section {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 80px;
   background-image: linear-gradient(
     to top,
@@ -829,6 +892,10 @@ a {
   position: absolute;
   left: 67.2rem;
 }
+#reviews-carousel {
+  margin-top: 30px;
+  display: flex;
+}
 /* ===================================
     Portfolio-Section
 ====================================== */
@@ -863,7 +930,7 @@ a {
   padding: 0;
   margin: 0;
   border: none;
-  color: #000;
+  color: #333333;
   font-size: 14px;
   font-weight: 600;
   margin-right: 25px;
@@ -1017,16 +1084,17 @@ a {
 }
 .blog-section .row-2 .card .card-body .heading {
   font-size: 18px;
-  color: #000;
+  color: #333333;
 }
 .blog-section .row-2 .card .card-body .text {
   font-size: 16px;
-  color: #9fa4af;
+  color: #333333;
+  font-weight: 400;
 }
 .blog-section .row-2 .card .card-body .name {
   padding-left: 0;
 }
-.blog-section .row-2 .card .card-body .name li {
+.blog-section .row-2 .card .card-body .heading .name li {
   list-style: none;
   color: #ff7c88;
   font-size: 15px;
@@ -1066,26 +1134,59 @@ a {
   display: none;
 }
 
+.text-info-container {
+  padding-left: 90px;
+  padding-right: 100px;
+}
+.titulo-info-container{
+  font-size: 20px;
+  color: #333333;
+  text-align: left;
+}
+
 /*Contact Info*/
 .address-section .contact-info {
   padding-top: 45px;
   padding-left: 60px;
 }
 .address-section .contact-info .subheading {
-  font-weight: 400;
-  color: #000;
+  font-weight: 300;
+  color: #333333; /* cor do texto */ !important
+  margin-left: -10px;
 }
 .address-section .contact-info .heading {
-  color: #000;
+  color: #333333;
 }
 .address-section .contact-info .text {
-  color: #000;
+  color: #333333;
   font-size: 15px;
+}
+#contact-info {
+  padding-top: 20px;
+  color: #333333;
 }
 
 /* ===================================
    Contact-Section
 ====================================== */
+
+.price-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+.price-text-titulo {
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
 .contact-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1105,11 +1206,12 @@ a {
 }
 
 /*Form Section*/
+
 .contact-section .form-section {
   padding-top: 60px;
 }
 .contact-form .form-control::placeholder {
-  color: black;
+  color: #333333;
   font-size: 14px;
   font-weight: 300;
 }
@@ -1139,6 +1241,10 @@ a {
 .contact-section .button {
   width: 100%;
 }
+#contact-laten {
+  text-align: center;
+  color: #333333;
+}
 
 /* ===================================
     Footer
@@ -1155,7 +1261,8 @@ footer .text {
 }
 
 footer .social-icons {
-  text-align: center;
+  text-align: center !important;
+
 }
 /* ===================================
     StandAlone Pgae
@@ -1196,7 +1303,7 @@ footer .social-icons {
 
 /*Main Page Start*/
 .main-page {
-  padding-top: 120px;
+  padding-top: 40px;
 }
 .main-page .standalone-heading {
   padding-bottom: 100px;
@@ -1205,10 +1312,10 @@ footer .social-icons {
   color: #000;
 }
 .main-page .subheading {
-  color: #000;
+  color: #333333;
 }
 .main-page .text {
-  color: #000;
+  color: #333333;
 }
 
 .main-page .standalone-heading .heading {
@@ -1238,6 +1345,13 @@ footer .social-icons {
 .main-page .standalone-row:nth-child(2) .row-text {
   padding-left: 0;
   padding-right: 30px;
+}
+
+.heading-standalone {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333333;
+  font-weight: 500;
 }
 
 /*Image Hover*/
@@ -1377,6 +1491,8 @@ footer .social-icons {
     position: relative;
     bottom: 45.5rem;
   }
+
+
   /*About Section*/
   .about-section .row-2 .img-col {
     position: relative;
@@ -1390,6 +1506,7 @@ footer .social-icons {
     margin-right: 5px;
     margin-left: 5px;
   }
+
   /*Portfolio Section*/
   .portfolio-section .section-heading .heading {
     margin-left: 0;
@@ -1422,6 +1539,7 @@ footer .social-icons {
   /*Address Section*/
   .address-section {
     text-align: center;
+    color: #333333;
   }
   .address-section .contact-info {
     padding-left: 0;
@@ -1522,5 +1640,127 @@ footer .social-icons {
   /*Portfolio Section*/
   .portfolio-section .portfolio-btn .btn.button {
     padding: 7px 25px !important;
+  }
+}
+
+/* Alinhamento geral à direita */
+.text-section,
+.text-col,
+.heading-col,
+.section-heading,
+.testimonials,
+.blog-section .card,
+.form-section,
+.social-icons,
+.about-section,
+.reviews-section,
+.portfolio-section,
+.contact-section,
+footer {
+  text-align: right;
+  margin-left: auto;
+  padding-right: 0px;
+}
+
+/* Menu de navegação */
+.navbar-nav {
+  justify-content: flex-end;
+}
+
+/* Banner */
+.banner {
+  text-align: right;
+}
+
+/* Botões e ícones */
+.button-link,
+.social-icons ul {
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.button-link:hover {
+  transform: translateX(5px);
+  opacity: 0.8;
+}
+
+.button-link i {
+  margin-right: 10px;
+}
+
+/* Formulário de contato */
+.form-control {
+  text-align: right;
+}
+
+/* Reviews Carousel Centering */
+.reviews-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reviews-carousel .testimonials {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reviews-carousel .star-icons {
+  padding: 0;
+  margin: 15px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reviews-carousel .heading,
+.reviews-carousel .subheading,
+.reviews-carousel .text-1 {
+  margin: 15px 0;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo-section {
+  flex: 0 0 400px;
+}
+
+.logo-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-section {
+  flex: 1;
+  text-align: left;
+
+}
+
+/* Ajustes para responsividade em telas menores */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-section {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
   }
 }
