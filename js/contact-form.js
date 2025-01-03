@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 form.reset();
             } else {
                 // Erro
-                throw new Error('Erro no envio');
+                console.log(data);
             }
         })
         .catch(error => {
