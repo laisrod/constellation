@@ -1,0 +1,347 @@
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Ajustes gerais */
+  .heading {
+    font-size: 24px !important;
+    padding: 0 15px;
+  }
+
+  .text {
+    font-size: 14px !important;
+    padding: 0 15px;
+  }
+
+  /* Banner */
+  .banner {
+    padding-top: 120px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .banner .text-col {
+    position: relative;
+    bottom: 0;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .banner .text-col .heading {
+    font-size: 32px !important;
+    padding-right: 0;
+  }
+
+  /* Navegação */
+  .navbar .navbar-nav .nav-link {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  /* Info Container */
+  .info-container {
+    padding: 15px;
+  }
+
+  .text-info-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Reviews Section */
+  .reviews-section .reviews-carousel .item .text.text-1 {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* About Section */
+  .about-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-section .yoga-services .service {
+    padding: 15px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-form .form-control {
+    margin-bottom: 20px;
+  }
+
+  .row.row-1.no-gutters {
+    text-align: center;
+  }
+
+  .row.row-1.no-gutters > div {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #benefits-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  #benefits-text {
+    font-size: 24px;
+  }
+
+  .heading-col {
+    margin-bottom: 30px;
+  }
+}
+
+/* Media Queries para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  /* Ajustes específicos para telas muito pequenas */
+  .banner .text-col .heading {
+    font-size: 28px !important;
+  }
+
+  .side-menu {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    max-width: 120px;
+  }
+
+  .social-icons ul li {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .social-icons ul li a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}
+
+.row.row-1.no-gutters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .row-3.no-gutters {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .row-3.no-gutters .col-lg-3,
+  .row-3.no-gutters .col-md-12,
+  .row-3.no-gutters .col-sm-12 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .row-3.no-gutters > div:first-child {
+    order: 2 !important;
+  }
+
+  .row-3.no-gutters > div:not(:first-child) {
+    order: 1 !important;
+  }
+
+  .yoga-services .service {
+    max-width: 335px;
+    margin: 0 auto;
+  }
+}
+
+/* Ajuste para a logo-section */
+.logo-section img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .logo-section img {
+    max-width: 280px; /* Limita a largura máxima em telas menores */
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo-section {
+    grid-row: 1;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .text-info-container {
+    grid-row: 2;
+    width: 100%;
+    order: 2;
+    /* Garantir que o texto fique abaixo */
+    clear: both;
+    float: none;
+    margin-top: 20px;
+  }
+
+  /* Garantir que a imagem se comporte corretamente */
+  .logo-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* Mobile Responsive Styles (390x884) - iPhone 12/13 */
+@media only screen and (max-width: 390px) and (min-height: 884px) {
+  /* General Layout */
+  .container {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  /* Header/Navigation */
+  .navbar-top-default {
+    padding: 11px;
+    height: 72px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 11px 0;
+    font-size: 15px;
+  }
+
+  /* Banner Section */
+  .banner {
+    padding: 32px 0;
+    height: auto;
+  }
+
+  .banner .text-col {
+    position: static;
+    margin-bottom: 32px;
+    text-align: center;
+    padding: 0 18px;
+  }
+
+  .banner .text-col .heading {
+    font-size: 34px;
+    padding-right: 0;
+  }
+
+  .banner .text-col .text {
+    font-size: 17px;
+    padding-right: 0;
+  }
+
+  #benefits-title {
+    padding-top: 55px;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 45px 0;
+  }
+
+  .about-section .yoga-services .service {
+    margin: 22px 0;
+  }
+
+  .about-section .yoga-services .service .heading {
+    font-size: 21px;
+  }
+
+  /* Reviews Section */
+  .reviews-section .reviews-carousel .item .text.text-1 {
+    font-size: 17px;
+    padding: 0 18px;
+  }
+
+  /* Contact Section */
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact-form .form-control {
+    margin-bottom: 22px;
+    font-size: 15px;
+  }
+
+  #contact-info {
+    padding-top: 55px;
+  }
+
+  .address-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  /* Info Container Adjustments */
+  .info-container {
+    padding: 18px;
+  }
+
+  .text-info-container {
+    margin-top: -50px;
+  }
+
+  .titulo-info-container {
+    font-size: 1.1rem;
+    margin: 14px 0;
+  }
+
+  .price-text {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    margin-bottom: 14px;
+  }
+
+  /* Text Styles */
+  .heading {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .subheading {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Button Styles */
+  .btn.button {
+    padding: 9px 22px !important;
+    font-size: 15px !important;
+  }
+
+  .button-link {
+    padding: 11px 22px;
+    font-size: 15px;
+  }
+}
