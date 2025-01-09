@@ -644,69 +644,103 @@ a {
     #bdc2e8 0%,
     #bdc2e8 1%,
     #e6dee9 100%
-  ); // parede de marmore
+  );
   height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8px;
+  padding: 8rem 0 8px;
   position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
-.banner .text-col ul {
-  padding-left: 0;
+
+/* Container principal do banner */
+.banner .container {
+  padding: 2rem 0;
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
 }
-.banner .text-col ul li {
-  list-style: none;
-  display: inline-block;
-  color: #fff;
-}
-.banner .text-col {
-  position: absolute;
-  bottom: 9.3rem;
-}
-.banner .text-col .heading {
-  font-size: 40px;
-  padding-right: 5rem;
-}
-.banner .text-col .text {
-  padding-right: 12rem;
-}
+
+/* Seção da imagem */
 .banner .img-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
-/*Video icon*/
-.banner .media i {
-  overflow: hidden;
-  border-radius: 50%;
+
+.banner .img-section img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Seção de texto */
+.banner .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .text-section .benefits {
+  margin-bottom: 2rem;
+}
+
+.banner .text-section #benefits {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.banner .text-section .text-one {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Botão de link */
+.banner .button-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  float: right;
+  margin-left: auto;
+}
+
+.banner .button-link:hover {
+  background-color: #bdc2e8;
   color: #fff;
-  height: 30px;
-  line-height: 28px;
-  width: 30px;
-  border: 1px solid #fff;
-  text-align: center;
-  font-size: 10px;
-  padding-left: 2px;
-  transition: 0.5s ease;
 }
-.banner .media .media-body {
-  margin-left: 10px;
-  color: #fff;
+
+.banner .button-link i {
+  margin-right: 10px;
 }
-.banner .media:hover i {
-  color: #fff;
-  border: 1px solid #000;
-  background-color: #000;
-  transition: 0.5s ease;
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .banner {
+    padding-top: 6rem;
+  }
+  
+  .banner .text-section {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
-.banner .media:hover {
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.banner .media {
-  width: 160px;
-  height: 50px;
-  padding: 10px 12px 10px 5px;
-  background-color: transparent;
+
+@media (max-width: 767px) {
+  .banner {
+    padding-top: 4rem;
+  }
+  
+  .banner .text-section #benefits {
+    font-size: 1.5rem;
+  }
 }
 
 .text-one {
@@ -753,12 +787,6 @@ a {
   padding-top: 0px;
 }
 
-#benefits-text {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-top: 0px;
-  color: #aba4ff;
-}
 
 /* ===================================
      About Section
@@ -815,7 +843,7 @@ a {
 
 /* Heading Column */
 .about-section .heading-col .subheading .benefits-title {
-  color: #333333;
+  color: #c2d5ff !important;
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -887,6 +915,7 @@ a {
 
 .reviews-section .reviews-carousel .item .subheading {
   font-size: 20px;
+  text-align: center;
 }
 
 .reviews-section .reviews-carousel .item .text.text-1 {
@@ -1100,6 +1129,9 @@ a {
   color: #333333;
   text-align: center;
 }
+
+
+
 /* ===================================
      Blog Section
 ====================================== */
@@ -1117,10 +1149,30 @@ a {
 .blog-section .row-1 .section-heading {
   margin-bottom: 60px;
 }
-.blog-section .row-1 .section-heading .heading {
-  padding-left: 200px;
-  padding-right: 200px;
+
+/* Blog Section Row-1 Centering */
+.blog-section .row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;    /* Reduzido o padding superior */
+  padding-bottom: 60px; /* Aumentado o padding inferior */
+  font-size: 28px;
 }
+
+.blog-section .row-1 .section-heading {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.blog-section .row-1 .section-heading .heading {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
 /*Row-2*/
 .blog-section .row-2 .card {
   border: none;
@@ -1217,7 +1269,7 @@ a {
 }
 
 .titulo-info-container{
-  font-size: 20px;
+  font-size: 26px;
   color: #333333;
   text-align: left;
 }
@@ -1251,7 +1303,7 @@ a {
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   text-align: justify;
@@ -1711,7 +1763,7 @@ footer .social-icons {
     padding-top: 30rem;
   }
   .banner .text-col {
-    bottom: 33.5rem;
+    bottom: 23.5rem;
   }
 
   /*Portfolio Section*/
@@ -1776,11 +1828,12 @@ footer {
 }
 
 /* Reviews Carousel Centering */
-.reviews-carousel .item {
+.reviews-carousel .item .heading-testimonials {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
 }
 
 .reviews-carousel .testimonials {
@@ -2097,7 +2150,7 @@ html, body {
   }
 
   footer .social-icons li {
-    margin: 0 8px;
+    margin: 0 10px;
   }
 
   /* Utility Classes */
@@ -2118,7 +2171,7 @@ html, body {
 
   /* Button Adjustments */
   .btn.button {
-    padding: 8px 20px !important;
+    padding: 10px 24px !important;
     font-size: 14px !important;
   }
 
@@ -2635,4 +2688,532 @@ html, body {
     margin-bottom: 15px;
   }
 }
+
+/* ===================================
+    Benefits Section Styling 
+====================================== */
+
+/* Container principal */
+.benefits-container {
+  padding: 4rem 0;
+}
+
+/* Cabeçalho dos benefícios */
+.benefits-header {
+  margin-bottom: 3rem;
+}
+
+.benefits-subtitle {
+  color: #68676e;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-title {
+  color: #2d2d2d;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Conteúdo dos benefícios */
+.benefits-content {
+  margin: 2rem 0;
+}
+
+.benefit-item {
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-heading {
+  color: #2d2d2d;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.benefit-text {
+  color: #68676e;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Imagem central */
+.benefit-image {
+  padding: 1rem;
+}
+
+.benefit-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Rodapé dos benefícios */
+.benefits-footer {
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .benefit-item {
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-content {
+    flex-direction: column;
+  }
+  
+  .benefit-image {
+    margin: 2rem 0;
+  }
+}
+
+/* Animações */
+.wow {
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Correção para o banner em telas muito pequenas */
+@media (max-width: 320px) {
+  .banner {
+    padding-top: 20rem;
+  }
+  
+  .banner .text-col {
+    bottom: 23.5rem;
+  }
+  
+  .banner .text-col .heading {
+    font-size: 28px;
+  }
+}
+
+/* Ajuste para o menu lateral em telas médias */
+@media (max-width: 576px) {
+  .side-menu .inner-wrapper {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .side-nav .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+}
+
+/* Correção para o grid de serviços */
+@media (max-width: 768px) {
+  .yoga-services .service {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .text-info-container {
+    margin-top: 0;
+    padding: 20px;
+  }
+}
+
+/* Ajuste para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    padding-top: 25rem;
+  }
+  
+  .banner .text-col {
+    bottom: 30rem;
+  }
+}
+
+/* Correção para telas ultrawide */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+  
+  .banner {
+    padding-top: 10rem;
+  }
+}
+
+/* Ajustes gerais de flexibilidade */
+.img-section img,
+.card img,
+.logo-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Correção para o overflow horizontal */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Contact Image Styling */
+.contact-image-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.contact-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .contact-image-container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-image-container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-image-container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-image-container {
+        width: 95%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-image-container {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+/* ===================================
+    Standalone Page Layout
+====================================== */
+
+/* Layout principal */
+.main-page {
+   padding: 4rem 2rem;
+   overflow-x: hidden;
+}
+
+/* Cabeçalho da página */
+.standalone-heading {
+   margin-bottom: 4rem;
+   width: 100%;
+}
+
+.heading-standalone {
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   color: #333;
+   text-align: center;
+}
+
+/* Layout das rows */
+.standalone-row {
+   margin: 4rem 0;
+   display: flex;
+   align-items: center;
+   gap: 3rem;
+   width: 100%;
+}
+
+/* Imagens */
+.row-image {
+   flex: 1;
+   padding: 1rem;
+   max-width: 50%;
+}
+
+.row-image img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+}
+
+.row-image img:hover {
+   transform: scale(1.02);
+}
+
+/* Containers de texto */
+.row-text {
+   flex: 1;
+   padding: 2rem;
+   max-width: 50%;
+}
+
+.row-text .heading {
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+   color: #333;
+}
+
+.row-text .text {
+   margin-bottom: 1.5rem;
+   line-height: 1.8;
+   font-size: 1.1rem;
+   text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+   .standalone-row {
+      gap: 2rem;
+   }
+   
+   .row-text {
+      padding: 1.5rem;
+   }
+}
+
+@media (max-width: 991px) {
+   .main-page {
+      padding: 3rem 1.5rem;
+   }
+
+   .standalone-row {
+      flex-direction: column;
+      margin: 2rem 0;
+   }
+
+   .row-image, 
+   .row-text {
+      width: 100%;
+      max-width: 100%;
+      padding: 1rem;
+   }
+
+   .heading-standalone {
+      font-size: 2rem;
+   }
+
+   .row-text .heading {
+      font-size: 1.8rem;
+      text-align: center;
+   }
+}
+
+@media (max-width: 768px) {
+   .main-page {
+      padding: 2rem 1rem;
+   }
+
+   .standalone-heading {
+      margin-bottom: 2rem;
+   }
+
+   .text {
+      font-size: 1rem;
+      line-height: 1.6;
+   }
+
+   .row-image img {
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 576px) {
+   .heading-standalone {
+      font-size: 1.8rem;
+   }
+
+   .row-text .heading {
+      font-size: 1.5rem;
+   }
+
+   .row-image {
+      padding: 0.5rem;
+   }
+   
+   .row-text {
+      padding: 1rem 0.5rem;
+   }
+}
+
+/* Tamanhos base de fonte */
+:root {
+    --text-base: 1.125rem;      /* 18px */
+    --text-large: 1.25rem;      /* 20px */
+    --heading-base: 2.25rem;    /* 36px */
+    --subheading-base: 1.5rem;  /* 24px */
+}
+
+/* Estilos gerais de texto */
+.text {
+    font-size: var(--text-base);
+    line-height: 1.6;
+}
+
+.heading {
+    font-size: var(--heading-base);
+    line-height: 1.2;
+}
+
+.subheading {
+    font-size: var(--subheading-base);
+    line-height: 1.3;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    :root {
+        --text-base: 1rem;          /* 16px */
+        --text-large: 1.125rem;     /* 18px */
+        --heading-base: 2rem;       /* 32px */
+        --subheading-base: 1.25rem; /* 20px */
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --text-base: 1.25rem;      /* 20px */
+        --text-large: 1.375rem;    /* 22px */
+        --heading-base: 2.5rem;    /* 40px */
+        --subheading-base: 1.75rem; /* 28px */
+    }
+}
+
+/* Contact Form Container Styles */
+.contact-form-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 0 20px; /* Mesma margem lateral do texto */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-form .row {
+  margin: 0; /* Remove margens padrão do Bootstrap */
+}
+
+.contact-form .col-12 {
+  padding: 0; /* Remove padding padrão do Bootstrap */
+}
+
+/* Ajuste para manter consistência com o container de texto */
+.text-info-container,
+.contact-form-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .text-info-container,
+  .contact-form-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-12.col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .text-info-container,
+  .contact-form-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ... existing code ... */
+
+/* Contact Form Text Styles */
+.contact-form .form-control {
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte dos inputs */
+  line-height: 1.5;
+  padding: 12px 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333333;
+  border-radius: 0;
+  color: #333333;
+}
+
+.contact-form .form-control::placeholder {
+  color: #333333;
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte dos placeholders */
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.contact-form textarea.form-control {
+  min-height: 120px; /* Aumenta um pouco a altura da área de texto */
+  font-size: 1.2rem;
+}
+
+.contact-form .btn.button {
+  font-size: 1.1rem !important; /* Aumenta o tamanho da fonte do botão */
+  padding: 12px 30px !important;
+  font-weight: 500 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form .form-control,
+  .contact-form .form-control::placeholder,
+  .contact-form textarea.form-control,
+  .contact-form .btn.button {
+    font-size: 1.1rem; /* Ligeiramente menor em telas pequenas */
+  }
+}
+
+/* ... existing code ... */
 
