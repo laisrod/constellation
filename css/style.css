@@ -910,7 +910,7 @@ a {
     #bdc2e8 0%,
     #bdc2e8 1%,
     #e6dee9 100%
-  ); // parede de marmore
+  );
 }
 
 .reviews-section .reviews-carousel .item .subheading {
@@ -3215,5 +3215,432 @@ html, body {
   }
 }
 
-/* ... existing code ... */
+/* Mobile-specific fixes */
+@media (max-width: 767px) {
+    .banner {
+        padding-top: 60px;  /* Reduz o padding superior */
+        height: auto;       /* Altura automática */
+        overflow: visible;
+    }
+
+    .banner .text-section {
+        position: static;   /* Remove posicionamento absoluto */
+        bottom: auto;       /* Remove bottom fixo */
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    #benefits {
+        position: relative;
+        margin-top: 30px !important;
+        padding: 20px;
+    }
+
+    #benefits01, #benefits02 {
+        position: relative;
+        margin-top: 30px !important;  /* Força margem positiva */
+        padding: 20px;
+        width: 100%;
+    }
+
+    #benefits03 {
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .text-one {
+        position: relative;
+        margin: 20px 0;
+        padding: 0 20px;
+        width: 100%;
+        clear: both;
+    }
+
+    /* Ajuste de fonte para mobile */
+    #benefits, .text-one {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Remove quaisquer transformações ou posicionamentos absolutos */
+    .banner .text-col {
+        position: static;
+        transform: none;
+        bottom: auto;
+    }
+
+    /* Garante que não haja margens negativas */
+    * {
+        margin-top: 0 !important;
+    }
+
+    /* Ajusta o fluxo do conteúdo */
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Portfolio Grid Responsive Adjustments */
+@media (max-width: 767px) {
+  /* Ajuste do grid */
+  .cbp-l-grid-mosaic {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Ajuste dos items */
+  .cbp-item {
+    position: relative !important;
+    margin-bottom: 8px !important; /* Reduzido */
+  }
+
+  /* Ajuste das imagens */
+  .cbp-item .cbp-caption-defaultWrap img {
+    width: 100%;
+    height: 300px; /* Altura fixa para consistência */
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Ajuste do overlay de hover */
+  .cbp-caption-activeWrap {
+    opacity: 1 !important;
+    position: relative !important;
+    background: rgba(175, 196, 255, 0.9) !important;
+  }
+
+  /* Ajuste do texto no hover */
+  .hover-text {
+    padding: 15px;
+  }
+
+  .p-hover-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .p-hover-des {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Ajuste do lightbox */
+  .cbp-popup-lightbox {
+    padding: 0 10px;
+  }
+
+  .cbp-popup-lightbox-img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+}
+
+/* Melhorias adicionais para telas muito pequenas */
+@media (max-width: 375px) {
+  .cbp-item .cbp-caption-defaultWrap img {
+    height: 250px; /* Altura menor para telas muito pequenas */
+  }
+
+  .p-hover-title {
+    font-size: 16px;
+  }
+
+  .p-hover-des {
+    font-size: 13px;
+  }
+}
+
+/* Ajustes para o popup do lightbox */
+.cbp-popup-lightbox-img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cbp-popup-lightbox-bottom {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Ajuste do posicionamento do hover-text */
+@media (max-width: 767px) {
+  .portfolio-hover-effect {
+    flex-direction: column-reverse !important; /* Inverte a ordem dos elementos */
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+
+  .hover-text {
+    position: relative;
+    padding: 15px;
+    background: rgba(175, 196, 255, 0.9);
+    width: 100%;
+  }
+
+  .cbp-caption-activeWrap {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    height: auto !important;
+    position: relative !important;
+    background: transparent !important;
+  }
+
+  .portfolio-inner-content {
+    display: none; /* Remove os spans decorativos em mobile */
+  }
+
+  /* Ajuste do container da imagem */
+  .cbp-caption-defaultWrap {
+    order: 2; /* Move a imagem para baixo */
+  }
+
+  /* Estilo do texto */
+  .p-hover-title {
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .p-hover-des {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+}
+
+/* Ajustes específicos para telas muito pequenas */
+@media (max-width: 375px) {
+  .p-hover-title {
+    font-size: 16px;
+  }
+
+  .p-hover-des {
+    font-size: 13px;
+  }
+
+  .hover-text {
+    padding: 12px;
+  }
+}
+
+/* Ajuste do posicionamento do hover-text para sobreposição */
+@media (max-width: 767px) {
+  .cbp-item {
+    position: relative !important;
+  }
+
+  .cbp-caption-activeWrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 100% !important;
+    background: rgba(175, 196, 255, 0.9) !important;
+    opacity: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+
+  .hover-text {
+    padding: 15px;
+    width: 100%;
+    background: rgba(175, 196, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .portfolio-inner-content {
+    display: none;
+  }
+
+  /* Estilo do texto sobreposto */
+  .p-hover-title {
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .p-hover-des {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+}
+
+/* Ajustes específicos para telas muito pequenas */
+@media (max-width: 375px) {
+  .p-hover-title {
+    font-size: 16px;
+  }
+
+  .p-hover-des {
+    font-size: 13px;
+  }
+
+  .hover-text {
+    padding: 12px;
+  }
+}
+
+/* Ajuste do posicionamento e espaçamento */
+@media (max-width: 767px) {
+  /* Reduz o espaçamento entre os itens */
+  .cbp-l-grid-mosaic {
+    display: flex;
+    flex-direction: column;
+    gap: 8px !important; /* Reduzido de 15px para 8px */
+  }
+
+  .cbp-item {
+    position: relative !important;
+    margin-bottom: 8px !important; /* Reduzido */
+  }
+
+  .cbp-caption-activeWrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 100% !important;
+    background: rgba(175, 196, 255, 0.7) !important; /* Mais transparente */
+    opacity: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+
+  .hover-text {
+    padding: 12px; /* Reduzido de 15px para 12px */
+    width: 100%;
+    background: rgba(175, 196, 255, 0.7); /* Mais transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .portfolio-inner-content {
+    display: none;
+  }
+
+  /* Ajuste do texto */
+  .p-hover-title {
+    color: #333333;
+    margin-bottom: 6px; /* Reduzido */
+    font-size: 18px;
+  }
+
+  .p-hover-des {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.3; /* Reduzido */
+    margin-bottom: 0;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 375px) {
+  .p-hover-title {
+    font-size: 16px;
+  }
+
+  .p-hover-des {
+    font-size: 13px;
+  }
+
+  .hover-text {
+    padding: 10px; /* Reduzido ainda mais para telas menores */
+  }
+}
+
+/* Ajuste da transparência do overlay para mobile */
+@media (max-width: 767px) {
+  .cbp-caption-activeWrap {
+    background: rgba(175, 196, 255, 0.3) !important; /* Muito mais transparente */
+  }
+
+  .hover-text {
+    background: rgba(175, 196, 255, 0.3); /* Muito mais transparente */
+    backdrop-filter: blur(2px); /* Adiciona um leve blur para melhorar legibilidade */
+  }
+
+  /* Ajuste das cores do texto para melhor contraste */
+  .p-hover-title {
+    color: #000000; /* Texto mais escuro */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5); /* Sombra sutil para legibilidade */
+  }
+
+  .p-hover-des {
+    color: #000000; /* Texto mais escuro */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5); /* Sombra sutil para legibilidade */
+  }
+}
+
+@media (max-width: 767px) {
+  .cbp-caption-activeWrap {
+    background: rgba(163, 170, 190, 0.2) !important; /* Aumentei para 50% de opacidade e ajustei levemente a cor */
+    position: absolute !important;
+    top: 5px !important;
+    left: 5px !important;
+    right: 5px !important;
+    bottom: 5px !important;
+    margin: 5px !important;
+    padding: 5px !important;
+
+  }
+
+  /* Remove o background da classe portfolio-hover-effect */
+  .portfolio-hover-effect {
+    background: none !important;
+  }
+
+  .hover-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+  }
+
+  .p-hover-title {
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .p-hover-des {
+    color: #000000;
+    font-weight: 500;
+  }
+
+  .cbp-l-grid-mosaic {
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important; /* Reduzido o espaçamento entre as imagens */
+  }
+
+  .cbp-item {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  }
+}
+
 
