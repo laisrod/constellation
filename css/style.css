@@ -691,6 +691,7 @@ a {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .banner .text-section .text-one {
@@ -804,6 +805,7 @@ a {
   /* Ajustes para a primeira linha (títulos) */
   .about-section .row-1 {
     margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   /* Ajustes para os títulos */
