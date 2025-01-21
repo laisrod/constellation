@@ -4054,40 +4054,7 @@ html, body {
   /* Contact Section */
 
     /* Ajuste da imagem de contato */
-/* Container principal */
-section.contact-section {
-  width: 100% !important;
-  padding: 0 !important;
-}
 
-/* Container da imagem */
-section.contact-section .contact-image-container {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: visible !important;
-  position: relative !important;
-}
-
-/* Imagem */
-section.contact-section .contact-image-container img.contact-image {
-  width: 100% !important;
-  min-height: 500px !important;
-  max-height: none !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-/* Ajuste do container de texto */
-section.contact-section .text-info-container {
-  margin-top: 30px !important;
-  padding: 0 15px !important;
-}
 
   .contact-form .form-control {
     margin-bottom: 22px;
