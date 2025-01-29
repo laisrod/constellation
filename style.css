@@ -276,5 +276,94 @@
   }
 }
 
+/* Para dispositivos muito pequenos (320px) */
+@media (max-width: 320px) {
+  /* Ajustes gerais */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .navbar-top-default {
+    height: 60px;
+  }
+
+  /* Banner */
+  .banner {
+    padding-top: 15rem;
+  }
+
+  .banner .text-col .heading {
+    font-size: 24px;
+  }
+
+  /* Seções */
+  .heading {
+    font-size: 20px;
+  }
+
+  .subheading {
+    font-size: 16px;
+  }
+
+  /* Formulários */
+  .contact-form .form-control {
+    font-size: 14px;
+  }
+
+  /* Botões */
+  .btn.button {
+    padding: 8px 20px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Para smartphones Android menores (480px) */
+@media (max-width: 480px) {
+  /* Ajustes gerais */
+  body {
+    font-size: 15px;
+  }
+
+  /* Header */
+  .navbar-top-default {
+    height: 65px;
+  }
+
+  /* Banner */
+  .banner {
+    padding-top: 18rem;
+  }
+
+  .banner .text-col .heading {
+    font-size: 26px;
+  }
+
+  /* Seções */
+  .heading {
+    font-size: 22px;
+  }
+
+  .subheading {
+    font-size: 17px;
+  }
+
+  /* Grid e layouts */
+  .yoga-services .service {
+    padding: 15px;
+  }
+
+  /* Formulários */
+  .contact-form .form-control {
+    font-size: 15px;
+  }
+
+  /* Botões */
+  .btn.button {
+    padding: 9px 22px !important;
+    font-size: 13px !important;
+  }
+}
+
 
 

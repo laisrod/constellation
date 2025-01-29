@@ -4114,3 +4114,582 @@ html, body {
   }
 }
 
+/* Tablet specific styles for 768x1024 (iPadmini) */
+@media only screen and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) {
+  /* Reset e Layout Geral */
+  body {
+    max-width: 768px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 30px;
+    overflow-x: hidden;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* Header/Navigation */
+  .navbar-top-default {
+    padding: 15px 30px;
+    height: 80px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  /* Side Menu */
+  .side-menu {
+    width: 50%; /* Reduzido para tablets */
+  }
+
+  .side-menu .side-nav {
+    margin-top: 80px;
+  }
+
+  .side-nav .navbar-nav .nav-link {
+    font-size: 22px;
+  }
+
+  /* Banner Section */
+  .banner {
+    padding: 60px 0;
+    height: auto;
+    min-height: 70vh;
+  }
+
+  .banner .row {
+    flex-direction: column;
+  }
+
+  .banner .text-col {
+    position: static;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  .banner .text-col .heading {
+    font-size: 48px;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .banner .text-col .text {
+    font-size: 20px;
+    padding-right: 0;
+    line-height: 1.6;
+  }
+
+  .banner .img-section,
+  .banner .text-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .banner .benefits {
+    padding: 40px 0;
+  }
+
+  .banner #benefits {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  #benefits-title {
+    padding-top: 80px;
+  }
+
+  /* Benefits Section */
+  #benefits01, #benefits02 {
+    margin-top: 0 !important;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto !important;
+  }
+
+  #benefits03 {
+    margin-top: 15px;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-section .row-2 img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Yoga Services */
+  .yoga-services .row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .yoga-services .img-col {
+    order: 1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .yoga-services .service {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+    margin: 30px 0;
+  }
+
+  .yoga-services .service .heading {
+    font-size: 26px;
+  }
+
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 80px 0;
+  }
+
+  .portfolio-section .cbp-item {
+    width: 48% !important; /* 2 colunas para tablet */
+    margin: 1% !important;
+  }
+
+  .cbp-l-filters-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cbp-l-filters-button .cbp-filter-item {
+    width: auto;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  /* Portfolio Items */
+  .cbp-item .cbp-caption-defaultWrap img {
+    height: 300px;
+  }
+
+  .hover-text {
+    padding: 20px;
+  }
+
+  .p-hover-title {
+    font-size: 20px;
+  }
+
+  .p-hover-des {
+    font-size: 16px;
+  }
+
+  /* Reviews Section */
+  .reviews-section {
+    padding: 80px 0;
+  }
+
+  .reviews-section .reviews-carousel .item .text.text-1 {
+    font-size: 20px;
+    padding: 0 60px;
+    line-height: 1.6;
+  }
+
+  .reviews-section .testimonials {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Blog Section */
+  .blog-section {
+    padding: 80px 0;
+  }
+
+  .blog-section .card {
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-section .card .card-body {
+    padding: 30px;
+  }
+
+  .blog-section .card .card-body .heading {
+    font-size: 24px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .contact-section .info-container {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    padding: 40px;
+  }
+
+  .contact-form .form-control {
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+
+  .contact_btn.btn {
+    width: 80% !important;
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+    margin: 20px auto !important;
+    min-height: 50px !important;
+    border-radius: 50px !important;
+  }
+
+  /* Address Section */
+  .address-section {
+    padding: 80px 0;
+  }
+
+  .text-info-container {
+    margin-top: -80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Map */
+  .gmap_canvas iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 60px 0;
+  }
+
+  footer .social-icons ul {
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  /* Typography */
+  h2 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  h5 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .subheading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Buttons */
+  .btn.button {
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+  }
+
+  .button-link {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  /* Specific iPad Improvements */
+  .container {
+    padding-left: max(30px, env(safe-area-inset-left));
+    padding-right: max(30px, env(safe-area-inset-right));
+  }
+
+  /* Better touch targets for iPad */
+  .nav-link,
+  .btn,
+  .button-link,
+  .cbp-filter-item {
+    min-height: 44px; /* Apple's recommended minimum */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Improved scrolling */
+  .container,
+  .row {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 80px 0;
+  }
+
+  .portfolio-section .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-section .cbp-item {
+    width: 100% !important; /* Uma coluna para melhor visualização */
+    margin-bottom: 30px !important;
+  }
+
+  .portfolio-section .portfolio-foot-detail {
+    padding: 20px 0;
+  }
+
+  .cbp-l-filters-button {
+    display: flex;
+    flex-direction: row; /* Alterado para row para melhor distribuição */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .cbp-l-filters-button .cbp-filter-item {
+    width: auto;
+    padding: 10px 25px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 4px;
+  }
+
+  /* Portfolio Items */
+  .cbp-item .cbp-caption-defaultWrap img {
+    height: 450px; /* Altura maior para melhor proporção */
+    object-fit: cover;
+  }
+
+  .hover-text {
+    padding: 25px;
+  }
+
+  .p-hover-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .p-hover-des {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Blog Section */
+  .blog-section {
+    padding: 80px 0;
+  }
+
+  .blog-section .row-1 {
+    margin-bottom: 50px;
+  }
+
+  .blog-section .row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .blog-section .card {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-section .card .card-img {
+    height: 450px; /* Altura proporcional à tela */
+    overflow: hidden;
+  }
+
+  .blog-section .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-section .card .card-body {
+    padding: 30px;
+  }
+
+  .blog-section .card .card-body .date-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .blog-section .card .card-body .heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .blog-section .card .card-body .text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .blog-section .card .card-body .name {
+    font-size: 15px;
+  }
+
+  .blog-section .blog-col-2,
+  .blog-section .blog-col-3 {
+    margin-top: 0;
+  }
+
+  /* Blog Section */
+  .blog-section {
+    padding: 80px 0;
+  }
+
+  .blog-section .container {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .blog-section .row-1 {
+    margin-bottom: 50px;
+    padding: 0 30px;
+  }
+
+  .blog-section .row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .blog-section .blog-col-1,
+  .blog-section .blog-col-2,
+  .blog-section .blog-col-3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .blog-section .card {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 40px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .blog-section .card:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .blog-section .card .card-img {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .blog-section .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-section .card .card-body {
+    padding: 30px;
+  }
+
+  .blog-section .card .card-body .date-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .blog-section .card .card-body .heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .blog-section .card .card-body .text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .blog-section .card .card-body .name {
+    font-size: 15px;
+  }
+
+  /* Ajuste do título principal */
+  .blog-section .heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+
+  .benefit-item.text-center {
+    font-size: 32px !important; /* Dobro do tamanho original (16px) */
+    line-height: 1.4;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .benefit-item.text-center h4 {
+    font-size: 36px !important; /* Dobro do tamanho original */
+    margin-bottom: 20px;
+  }
+
+  .benefit-item.text-center p {
+    font-size: 32px !important; /* Dobro do tamanho original */
+    line-height: 1.5;
+  }
+}
+
